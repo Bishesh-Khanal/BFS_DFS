@@ -1,11 +1,12 @@
 // BFS_DFS.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include "GameEngine.h"
 
 int main()
 {
-    std::cout << "This is to simulate BFS and DFS using SFML\n";
+    std::shared_ptr<GameEngine> game = std::make_shared <GameEngine>();
+    game->run(game);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
